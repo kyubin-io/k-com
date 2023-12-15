@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .modalBackground {
+    @apply w-full h-full flex items-center justify-center absolute bg-black bg-opacity-40 inset-0;
+  }
+
+  .modal {
+    @apply bg-white relative top-[5%] max-w-[80vw] min-w-[600px] rounded-md flex flex-col h-[450px];
+  }
+
+  .modalHeader {
+    @apply text-3xl font-bold px-20 pt-9 pb-5;
+  }
+
+  .modalForm {
+    @apply flex flex-col flex-1;
+  }
+
+  .modalBody {
+    @apply flex-1 px-8;
+  }
+
+  .inputDiv {
+    @apply flex flex-col h-[56px] relative my-2;
+  }
+  .inputLabel {
+    @apply w-full inline-block border border-solid border-gray-300 rounded-md text-sm absolute top-0 h-[56px] pt-2 px-2 text-gray-600 focus-within:text-red-100;
+  }
+
+  .input {
+    @apply w-full border-none text-base mt-4 pt-3 px-2 pb-2 outline-none;
+  }
+
+  .modalFooter {
+    @apply py-6 px-20;
+  }
+
+  .actionButton {
+    @apply w-8 h-8 rounded-full border-none cursor-pointer bg-white absolute top-4 left-4 flex items-center justify-center hover:rotate-90 hover:transition-all;
+  }
+
+  .closeButton {
+    @apply w-full h-12 rounded-full bg-gray-900 text-white text-base cursor-pointer border-none disabled:opacity-50 hover:bg-gray-700;
+  }
+}
