@@ -20,7 +20,7 @@
   }
 
   .modalBody {
-    @apply flex-1 px-8;
+    @apply flex-1 px-20;
   }
 
   .inputDiv {

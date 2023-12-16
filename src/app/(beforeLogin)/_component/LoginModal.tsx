@@ -29,13 +29,13 @@ export default function LoginModal() {
               </g>
             </svg>
           </button>
-          <div>로그인하세요.</div>
+          <div>Please log in</div>
         </div>
         <form onSubmit={onSubmit} className="modalForm">
           <div className="modalBody">
             <div className="inputDiv">
               <label className="inputLabel" htmlFor="id">
-                아이디
+                ID
               </label>
               <input
                 id="id"
@@ -48,7 +48,7 @@ export default function LoginModal() {
             </div>
             <div className="inputDiv">
               <label className="inputLabel" htmlFor="password">
-                비밀번호
+                Password
               </label>
               <input
                 id="password"
@@ -63,7 +63,7 @@ export default function LoginModal() {
           <div>{message}</div>
           <div className="modalFooter">
             <button className="closeButton" disabled={!id && !password}>
-              로그인하기
+              Log in
             </button>
           </div>
         </form>

@@ -71,13 +71,13 @@ export default function SignupModal() {
                 </g>
               </svg>
             </button>
-            <div>계정을 생성하세요.</div>
+            <div>Create your account</div>
           </div>
           <form className="modalForm">
             <div className="modalBody">
               <div className="inputDiv">
                 <label className="inputLabel" htmlFor="id">
-                  아이디
+                  ID
                 </label>
                 <input
                   id="id"
@@ -90,7 +90,7 @@ export default function SignupModal() {
               </div>
               <div className="inputDiv">
                 <label className="inputLabel" htmlFor="name">
-                  닉네임
+                  Name
                 </label>
                 <input
                   id="name"
@@ -103,7 +103,7 @@ export default function SignupModal() {
               </div>
               <div className="inputDiv">
                 <label className="inputLabel" htmlFor="password">
-                  비밀번호
+                  Password
                 </label>
                 <input
                   id="password"
@@ -116,7 +116,7 @@ export default function SignupModal() {
               </div>
               <div className="inputDiv">
                 <label className="inputLabel" htmlFor="image">
-                  프로필
+                  Profile
                 </label>
                 <input
                   id="image"
@@ -129,7 +129,7 @@ export default function SignupModal() {
             </div>
             <div className="modalFooter">
               <button className="closeButton" disabled>
-                가입하기
+                Sign in
               </button>
             </div>
           </form>
