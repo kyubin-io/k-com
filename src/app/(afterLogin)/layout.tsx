@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 import Logo from "../../../public/images/logo_black.png";
+import NavMenu from "./_component/NavMenu";
 
 export default function AfterLoginLayout({
   children,
@@ -18,6 +19,17 @@ export default function AfterLoginLayout({
                 <Image src={Logo} alt="Logo" width={40} height={40} />
               </div>
             </Link>
+            <nav>
+              <ul>
+                <NavMenu />
+              </ul>
+              <Link
+                href="/compose/tweet"
+                className="my-4 flex justify-center items-center h-12 shadow-md bg-[#1d9bf0] w-56 border-none text-white font-bold text-base rounded-3xl"
+              >
+                Post
+              </Link>
+            </nav>
           </div>
         </section>
       </header>

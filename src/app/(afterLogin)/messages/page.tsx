@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>profile</main>;
+  return <main>Messages</main>;
 }
