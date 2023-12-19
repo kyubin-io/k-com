@@ -12,14 +12,14 @@ export default function AfterLoginLayout({
   return (
     <div className="flex items-stretch bg-white">
       <header className="flex items-end flex-grow flex-shrink-0 flex-col">
-        <section className=" bg-orange-400 w-72 h-screen">
-          <div className="fixed w-72 h-screen">
+        <section className="w-72 h-screen">
+          <div className="fixed w-72 h-screen flex flex-col">
             <Link href="/home" className="inline-block h-14 mt-1">
               <div className="w-12 h-12 rounded-[50%] flex justify-center items-center hover:bg-slate-300 hover:bg-opacity-10">
                 <Image src={Logo} alt="Logo" width={40} height={40} />
               </div>
             </Link>
-            <nav>
+            <nav className="flex-1">
               <ul>
                 <NavMenu />
               </ul>
@@ -30,6 +30,7 @@ export default function AfterLoginLayout({
                 Post
               </Link>
             </nav>
+            <div>Logout button</div>
           </div>
         </section>
       </header>
