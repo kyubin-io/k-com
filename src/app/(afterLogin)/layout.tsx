@@ -4,6 +4,8 @@ import React, { ReactNode } from "react";
 import Logo from "../../../public/images/logo_black.png";
 import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
+import TrendSection from "./_component/TrendSection";
+import FollowRecommend from "./_component/FollowRecommend";
 
 export default function AfterLoginLayout({
   children,
@@ -38,7 +40,7 @@ export default function AfterLoginLayout({
       <div className="flex items-start flex-grow flex-shrink h-screen flex-col">
         <div className="h-full w-[990px] flex justify-between">
           <main className="w-[600px] bg-gray-100">{children}</main>
-          <section className="bg-blue-100 w-[350px] h-full">
+          <section className="w-[350px] h-full">
             <form className="flex h-11 w-full rounded-3xl bg-slate-400 mt-2 mb-3 items-center">
               <svg
                 width={20}
@@ -55,6 +57,8 @@ export default function AfterLoginLayout({
                 className="outline-none bg-inherit border-none p-3 ml-1 text-sm"
               />
             </form>
+            <TrendSection />
+            <FollowRecommend />
           </section>
         </div>
       </div>
