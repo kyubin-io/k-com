@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { ReactNode } from "react";
 import Logo from "../../../public/images/logo_black.png";
 import NavMenu from "./_component/NavMenu";
+import LogoutButton from "./_component/LogoutButton";
 
 export default function AfterLoginLayout({
   children,
@@ -30,7 +31,7 @@ export default function AfterLoginLayout({
                 Post
               </Link>
             </nav>
-            <div>Logout button</div>
+            <LogoutButton />
           </div>
         </section>
       </header>
