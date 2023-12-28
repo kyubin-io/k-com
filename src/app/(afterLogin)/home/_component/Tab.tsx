@@ -22,11 +22,11 @@ export default function Tab() {
       <div className="text-xl leading-6 font-bold py-3 px-4">홈</div>
       <div className="h-14 flex">
         <div onClick={onClickRec} className={HOME_TAB_CLASS}>
-          추천
+          Recommend
           <div className={TAB_INDICATOR_CLASS} hidden={tab === "fol"}></div>
         </div>
         <div onClick={onClickFol} className={HOME_TAB_CLASS}>
-          팔로우 중
+          Following
           <div className={TAB_INDICATOR_CLASS} hidden={tab === "rec"}></div>
         </div>
       </div>
