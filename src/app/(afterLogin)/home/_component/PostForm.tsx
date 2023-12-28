@@ -56,7 +56,7 @@ export default function PostForm() {
                 ref={imageRef}
               />
               <button
-                className="w-8 h-8 border-none cursor-pointer rounded-2xl transition duration-200 bg-[#1d9bf0] bg-opacity-1 flex items-center justify-center hover:bg-opacity-10"
+                className="w-8 h-8 border-none cursor-pointer rounded-2xl transition duration-200 bg-[#1d9bf0] bg-opacity-5 flex items-center justify-center hover:bg-opacity-10"
                 type="button"
                 onClick={onClickButton}
               >
