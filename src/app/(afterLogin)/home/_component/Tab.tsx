@@ -5,7 +5,7 @@ const HOME_TAB_CLASS =
   "flex-1 flex items-center justify-center text-base cursor-pointer relative";
 
 const TAB_INDICATOR_CLASS =
-  "h-1 self-center bg-[#1d9bf0] min-w-[56px] w-14 absolute bottom-0 border-r-[9999px]";
+  "h-1 self-center bg-[#1d9bf0] min-w-[56px] w-14 absolute bottom-0 border-r-[9999px] scale-x-75";
 
 export default function Tab() {
   const [tab, setTab] = useState("rec");

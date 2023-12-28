@@ -44,6 +44,7 @@ export default function PostForm() {
           value={content}
           onChange={onChange}
           placeholder="What's happening now?"
+          className="w-full border-none py-3 text-xl leading-6 outline-none"
         />
         <div className="w-full">
           <div className="flex flex-row items-center">
