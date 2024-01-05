@@ -7,11 +7,12 @@ import LogoutButton from "./_component/LogoutButton";
 import TrendSection from "./_component/TrendSection";
 import FollowRecommend from "./_component/FollowRecommend";
 
-export default function AfterLoginLayout({
-  children,
-}: {
+type Props = {
   children: ReactNode;
-}) {
+  modal: ReactNode;
+};
+
+export default function AfterLoginLayout({ children, modal }: Props) {
   return (
     <div className="flex items-stretch bg-white">
       <header className="flex items-end flex-grow flex-shrink-0 flex-col">
@@ -69,6 +70,7 @@ export default function AfterLoginLayout({
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }
