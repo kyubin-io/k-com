@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+
 export default function TweetModal() {
   const [content, setContent] = useState();
   const imageRef = useRef<HTMLInputElement>(null);
@@ -10,8 +11,8 @@ export default function TweetModal() {
   const onChangeContent = () => {};
 
   const me = {
-    id: "zerohch0",
-    image: "/5Udwvqim.jpg",
+    id: "test",
+    image: "/images/logo_black.png",
   };
 
   return (
@@ -48,7 +49,7 @@ export default function TweetModal() {
               />
             </div>
           </div>
-          <div className="py-0 px-4">
+          <div className="p-4">
             <div className="w-full border-b border-gray-200" />
             <div className="flex flex-row items-center">
               <div className="flex-1">
@@ -76,7 +77,10 @@ export default function TweetModal() {
                   </svg>
                 </button>
               </div>
-              <button className="actionButton" disabled={!content}>
+              <button
+                className="cursor-pointer w-24 h-9 rounded-2xl border-none my-2 mx-0 bg-[rgb(29,155,240)] text-white text-lg"
+                disabled={!content}
+              >
                 게시하기
               </button>
             </div>
