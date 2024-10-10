@@ -17,7 +17,7 @@ export default function TweetModal() {
 
   return (
     <div className="w-screen h-full flex justify-center absolute z-10 top-0 left-0 right-0 bottom-0 bg-black bg-opacity-40">
-      <div className="bg-white relative t-[5%] max-w-[80vw] min-w-[600px] max-h-[400px] rounded-2xl flex flex-col">
+      <div className="bg-white relative top-[5%] max-w-[80vw] min-w-[600px] max-h-[400px] rounded-2xl flex flex-col">
         <button
           className="w-[34px] h-[34px] rounded-2xl border-none cursor-pointer bg-white absolute left-2 top-2 flex items-center justify-center hover:bg-[#0f1419] hover:bg-opacity-10"
           onClick={onClickClose}
@@ -49,7 +49,7 @@ export default function TweetModal() {
               />
             </div>
           </div>
-          <div className="p-4">
+          <div className="px-4">
             <div className="w-full border-b border-solid border-gray-200" />
             <div className="flex flex-row items-center">
               <div className="flex-1">
