@@ -50,7 +50,7 @@ export default function TweetModal() {
             </div>
           </div>
           <div className="p-4">
-            <div className="w-full border-b border-gray-200" />
+            <div className="w-full border-b border-solid border-gray-200" />
             <div className="flex flex-row items-center">
               <div className="flex-1">
                 <input
