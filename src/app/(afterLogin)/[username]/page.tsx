@@ -1,3 +1,4 @@
+import BackButton from "../_component/BackButton";
 import Post from "../_component/Post";
 
 export default function Profile() {
@@ -9,7 +10,7 @@ export default function Profile() {
   return (
     <main className="w-[600px] border-[#eff3f4] border-r border-l border-solid flex flex-col items-stretch">
       <div className="flex h-[53px] items-center">
-        {/* <BackButton /> */}
+        <BackButton />
         <h3 className="text-xl font-bold ml-8">{user.nickname}</h3>
       </div>
       <div className="flex items-center border-b border-solid border-[#eff3f4] py-3 px-4">
