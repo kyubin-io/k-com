@@ -12,7 +12,7 @@ export default function Profile() {
         {/* <BackButton /> */}
         <h3 className="text-xl font-bold ml-8">{user.nickname}</h3>
       </div>
-      <div className="flex items-center border-b border-solid py-3 px-4">
+      <div className="flex items-center border-b border-solid border-[#eff3f4] py-3 px-4">
         <div className="flex items-center mr-3 rounded-[50%]">
           <img
             className="w-[134px] rounded-[50%]"
@@ -24,7 +24,7 @@ export default function Profile() {
           <div className="font-bold text-xl">{user.nickname}</div>
           <div className="text-base">@{user.id}</div>
         </div>
-        <button className="border border-solid border-[#cfd9de] py-0 px-4 h-[34px] bg-black flex items-center justify-center text-base text-white cursor-pointer hover:bg-[#272c30]">
+        <button className="border border-solid border-[#cfd9de] py-0 px-4 rounded-2xl h-[34px] bg-black flex items-center justify-center text-base text-white cursor-pointer hover:bg-[#272c30]">
           Follow
         </button>
       </div>
