@@ -1,6 +1,7 @@
 import BackButton from "../_component/BackButton";
 import Post from "../_component/Post";
 import SearchForm from "../_component/SearchForm";
+import Tab from "./_component/Tab";
 
 type Props = {
   searchParams: { q: string; f?: string; pf?: string };
