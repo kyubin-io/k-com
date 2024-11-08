@@ -1,4 +1,6 @@
-export default function SearchForm() {
+type Props = { q?: string };
+
+export default function SearchForm({ q }: Props) {
   return (
     <form className="fixed h-11 w-[inherit] rounded-3xl bg-slate-100 mt-2 mb-3 flex items-center">
       <svg
